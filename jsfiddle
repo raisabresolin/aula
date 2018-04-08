@@ -1,0 +1,31 @@
+//alert ("Bem vindo ao FDS!" + " Raísa");
+//alert (29+13+" Raísa");
+//alert (bem vindo);
+// + - / *
+//alert(29-13);
+// string = texto
+// nan = not a number
+// == para comparação
+
+//Declaração das variáveis
+let nome = null;
+let idade = NaN;
+let genero = "";
+
+//Perguntas para o usuário
+
+while(nome == null || nome == ""){
+	nome = prompt("Qual é o seu nome?");
+}
+while(isNaN(idade) || idade <= 0 || idade == null){
+	idade = prompt("E a sua idade?");
+}
+if(nome=="Raísa" || "raísa" || "raisa"){
+genero = "A";
+}
+else{
+genero = "O";
+}
+
+//Imprime a mensagem final
+alert (genero +" "+ nome + " tem " + idade + " anos");
